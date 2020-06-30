@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: Helvetica, "PingFang SC", "Microsoft Yahei", sans-serif; */
+    font-family: "ff-tisa-web-pro-1", "ff-tisa-web-pro-2", "Lucida Grande", "Hiragino Sans GB", "Hiragino Sans GB W3", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+    /* font-size: 14px; */
+}
+
+:root {
+    --base-color: #9AA2BC;
+    --main-color: #F0F3F6;
+    --accent-color: #585783;
+
+}
+
+header {
+    /* background-image: url("../assets/wallhaven-p8d1d3_1920x1080.png"); */
+    background-color: var(--main-color);
+    width: 100vw;
+    height: 100vh;
+    
+}
+
+.container {
+    max-width: 620px;
+    margin: 0 auto;
+    padding-top: 150px;
+    text-align: center;
+}
+
+
+.avatar {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 3px solid #FFF;
+    box-shadow: 0 0 1px 1px rgba(88, 87, 131, 0.5);
+}
+
+.blog-name {
+    margin: 0;
+    font-size: 30px;
+    font-weight: 100;
+    letter-spacing: 5px;
+    color: 	var(--accent-color);
+}
+
+.intro {
+    color: 	var(--accent-color);
+}
+
+.intro a {
+    text-decoration: none;
+    color: var(--base-color);
+}
+
+.navigation-wrapper, .social-wrapper {
+    padding-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.navigation {
+    width: 100%;
+    max-width: 200px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navigation li {
+    list-style: none;
+}
+
+.btn-link {
+    text-decoration: none;
+    color: var(--base-color);
+    border: 1px solid var(--base-color);
+    border-radius: 20px;
+    font-size: 14px;
+    padding: 5px 10px;
+}
+
+.social {
+    width: 100%;
+    max-width: 100px;
+    display: flex;
+    justify-content: space-between; 
+}
+.social li {
+    list-style: none;
+}
+
+.social i.fab {
+    font-size: 25px;
+    color: var(--base-color);
+}
+
+
+/* 博客文章 */
+.content-wrapper {
+    display: none;
+}
+
