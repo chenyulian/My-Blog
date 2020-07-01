@@ -11,8 +11,11 @@
     --base-color: #9AA2BC;
     --main-color: #F0F3F6;
     --accent-color: #585783;
-
+    --text-color: #999999;
+    --text-color-lighter: #c7c7c7;
+    --text-color-darker: #333333;
 }
+
 
 header {
     /* background-image: url("../assets/wallhaven-p8d1d3_1920x1080.png"); */
@@ -20,6 +23,13 @@ header {
     width: 100vw;
     height: 100vh;
     
+}
+
+header.side {
+    width: 30vw;
+    height: 100vh;
+    float: left;
+    position: fixed;
 }
 
 .container {
@@ -98,7 +108,49 @@ header {
 
 
 /* 博客文章 */
-.content-wrapper {
+.content-wrapper.hide {
     display: none;
 }
 
+.content-wrapper {
+    width: 70%;
+    margin-left: 35%;
+}
+
+.content-wrapper_inner {
+    padding: 50px 50px;
+    max-width: 750px;
+}
+
+.posts-list li {
+    list-style: none;
+    margin: 0 0 2.2em 0;
+}
+
+.post-title {
+    font-weight: 200;
+    font-size: 1.5em;
+    color: var(--text-color-darker);
+}
+
+.abstract {
+    font-weight: 100;
+    font-size: 0.9em;
+    line-height: 1.7em;
+    color: var(--text-color);
+    margin-top: 0.8em;
+
+}
+
+.post-meta {
+    font-weight: 100;
+    font-size: 0.8em;
+    color: var(--text-color-lighter);
+    margin-top: 0.5em;
+}
+
+.post-divider {
+    width: 30%;
+    margin: 2.2em 0 2.1em 0;
+    border-top: 1px solid var(--main-color);
+}
