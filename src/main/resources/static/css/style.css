@@ -28,6 +28,10 @@ header {
 header.side {
     width: 30vw;
     height: 100vh;
+    transition: width 0.75s ease-in;
+    -moz-transition: width 0.75s ease-in; /* Firefox 4 */
+    -webkit-transition: width 0.75s ease-in; /* Safari 和 Chrome */
+    -o-transition: width 0.75s ease-in; /* Opera */
     float: left;
     position: fixed;
 }
